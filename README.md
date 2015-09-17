@@ -1,7 +1,7 @@
 # clase-dinamica-robot
 Repositorio con prácticas y archivos relacionados a la clase de Dinámica del Robot
 
-Las prácticas de la clase requieren que se tenga instalado el ambiente de desarrollo de IPython.
+Las prácticas de la clase requieren que se tenga instalado el ambiente de desarrollo de Jupyter.
 
 La manera mas fácil de instalarlo es por medio de la distribución para desarrollo cientifico Anaconda, distribuida libremente en la siguiente [página](http://continuum.io/downloads#34) (asegurate de descargar la versión de Anaconda que tiene Python 3.4 o 3.5).
 
