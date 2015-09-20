@@ -5,6 +5,8 @@ Las prácticas de la clase requieren que se tenga instalado el ambiente de desar
 
 La manera mas fácil de instalarlo es por medio de la distribución para desarrollo cientifico Anaconda, distribuida libremente en la siguiente [página](http://continuum.io/downloads#34) (asegurate de descargar la versión de Anaconda que tiene Python 3.4 o 3.5).
 
+![pantalla](./screen_python_3.png)
+
 ## Instalación
 
 1. Descarga el paquete de instalación.
