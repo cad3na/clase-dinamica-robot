@@ -1,6 +1,7 @@
 from IPython.utils.warn import info
 from scipy.integrate import odeint
 from numpy import linspace, sin
+import sympy as sym
 
 def prueba_2_1(var0, var1, var2, var3, ans):
     x0 = 1
@@ -31,11 +32,26 @@ def prueba_2_2(tiempos, valores):
 
     xs = odeint(func=F, y0=x0, t=ts)
 
-    if ts == tiempos and xs == valores:
+    if (ts == tiempos).all() and (xs == valores).all():
         print("Perfecto!")
     else:
-        if ts != tiempos:
+        if (ts != tiempos).any():
             info("Quiero 100 puntos desde el tiempo 0 hasta el tiempo 10")
         else:
-            if xs !=  valores:
-                info("Revisa tu funcion F")    
+            if valores[0] != x0:
+                info("Revisa tus condiciones iniciales")
+            else:
+                if (xs !=  valores).any():
+                    info("Revisa tu funcion G")
+
+def prueba_2_3(solucion):
+    sim_t = sym.var("t")
+    sim_x = sym.Function("x")(sim_t)
+    ecuacion = sim_x.diff("t") - sim_x**2 + 5*sim_x
+
+    sol_sim = sym.dsolve(ecuacion, sim_x)
+
+    if solucion.equals(sol_sim):
+        print("Muy bien! ◕‿↼")
+    else:
+        info("Revisa tu ecuación diferencial")
