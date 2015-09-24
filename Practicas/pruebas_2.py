@@ -1,7 +1,8 @@
 from IPython.utils.warn import info
 from scipy.integrate import odeint
-from numpy import linspace, sin
+from numpy import linspace, sin, matrix, array
 import sympy as sym
+from control import tf, step
 
 def prueba_2_1(var0, var1, var2, var3, ans):
     x0 = 1
@@ -55,3 +56,25 @@ def prueba_2_3(solucion):
         print("Muy bien! ◕‿↼")
     else:
         info("Revisa tu ecuación diferencial")
+
+def prueba_2_4(solucion):
+    def G(X, t):
+        A = matrix([[0, 1],[-15, -8]])
+        B = matrix([[0], [1]])
+        return array((A*matrix(X).T + B).T).tolist()[0]
+
+    ts = linspace(0, 10, 100)
+    xs = odeint(func=G, y0=[0, 0], t=ts)
+    if (solucion == xs).all():
+        print("Nice!")
+    else:
+        info("Revisa tus matrices")
+
+def prueba_2_5(tiempo, estado):
+    G = tf([0, 0, 1], [1, 8, 15])
+    xs, ts = step(G, tiempo)
+
+    if (estado == xs).all():
+        print("Muy bien!")
+    else:
+         info("Revisa tu función de transferencia")
