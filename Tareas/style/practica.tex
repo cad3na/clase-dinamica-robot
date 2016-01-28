@@ -1,0 +1,40 @@
+%----------------------------------------------------------------------------------------
+%	PAQUETES Y OTRAS CONFIGURACIONES
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=letter, fontsize=11pt]{scrartcl} % Tamaño de papel y letra para el documento
+
+\usepackage[utf8]{inputenc} % Los caracteres acentuados se pueden escribir normalmente en el código
+\usepackage[T1]{fontenc} % Configuración de fuente de salida
+\usepackage{fourier} % Se usa una fuente diferente al default
+\usepackage[spanish,es-noquoting]{babel} % Se configura como documento en español
+\usepackage{amsmath,amsfonts,amsthm} % Paquetes para escribir formulas matemáticas
+\usepackage{graphicx} % Paquetes para incluir imágenes
+
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\usepackage{sectsty} % Paquete para configuración de secciones
+\allsectionsfont{\centering \normalfont \scshape} % Los títulos de las secciones son centrados, con la misma fuente y pequeñas mayúsculas
+
+\usepackage{todonotes}
+\usepackage{microtype}
+
+\usepackage{fancyhdr} % Paquete para personalizar pies y cabeceras de página
+\pagestyle{fancyplain} % Todas las páginas con las mismas cabeceras y pies de página
+\fancyhead{} % Sin cabecera
+\fancyfoot[L]{} % Vacío en la izquierda del pie de página
+\fancyfoot[C]{} % Vacío en el centro del pie de página
+\fancyfoot[R]{\thepage} % Número de página en el pie de pagina
+\renewcommand{\headrulewidth}{0pt} % Sin lineas en la cabecera
+\renewcommand{\footrulewidth}{0pt} % Sin lineas en el pie de página
+\setlength{\headheight}{13.6pt} % Altura de cabecera
+
+\numberwithin{equation}{section} % Numera ecuaciones en cada sección
+\numberwithin{figure}{section} % Numera figuras en cada sección
+\numberwithin{table}{section} % Numera tablas en cada sección
+
+\setlength\parindent{0pt} % Quita la indentación de los párrafos
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Comando personalizado para hacer linea horizontal
