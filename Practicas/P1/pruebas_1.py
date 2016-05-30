@@ -24,7 +24,7 @@ def prueba_1_2(funcion):
     
     grados = linspace(0, 100, 10)
     
-    if ([convertir(grado) for grado in grados] == [funcion(grado) for grado in grados]).all():
+    if [convertir(grado) for grado in grados] == [funcion(grado) for grado in grados]:
         print("Muy buen trabajo!")
     else:
         info("Revisa tus calculos")
