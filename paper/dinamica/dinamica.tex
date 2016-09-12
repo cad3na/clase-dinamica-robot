@@ -1,0 +1,136 @@
+%-------------------------------------------------------------------------------
+%	PAQUETES Y OTRAS CONFIGURACIONES
+%-------------------------------------------------------------------------------
+
+\input{../style/practica.tex}
+
+%-------------------------------------------------------------------------------
+%	TITULO
+%-------------------------------------------------------------------------------
+
+\title{
+	\normalfont \normalsize
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[width=0.3\textwidth]{../images/UNITEC.png}
+		\end{center}
+	\end{figure}
+	\textsc{Dinámica del Robot} \\ [25pt]
+	\horrule{0.5pt} \\[0.4cm] % Linea horizontal delgada
+	\huge Reporte de prácticas para materia presencial. \\ % Titulo de la práctica
+	\horrule{2pt} \\[0.5cm] % Linea horizontal mas gruesa
+}
+
+\author{Roberto Cadena Vega} % Nombre del profesor
+
+\date{\normalsize \today} % Fecha de la práctica
+
+%-------------------------------------------------------------------------------
+%	EMPIEZA EL DOCUMENTO
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Imprime el título
+
+%-------------------------------------------------------------------------------
+%	PRACTICAS
+%-------------------------------------------------------------------------------
+
+\section{Prácticas}
+
+	El indice básico de las prácticas es:
+
+	\begin{enumerate}
+		\item Introducción a Jupyter
+		\item Solución a ecuaciones diferenciales
+		\item Visualización de sistemas mecánicos
+		\item Movimientos de cuerpos rígidos
+		\item Modelado de robots
+		\item Control de robots
+		\item Control óptimo (opcional)
+	\end{enumerate}
+
+	Estas prácticas se pueden encontrar en el repositorio principal en linea de la matería\cite{github:dinamica}.
+
+%-------------------------------------------------------------------------------
+%	INVESTIGACION PREVIA
+%-------------------------------------------------------------------------------
+
+\section{Investigaciónes previas}
+
+	Los temas a investigar por parte del alumno previo a cada práctica son:
+
+	\begin{enumerate}
+		\item Método de bisección para encontrar raices de polinomios\cite{metodos:2007}.
+		\item Soluciones a ecuaciónes diferenciales homogéneas\cite{metodos:2007}.
+		\item Comportamiento de un sistema masa-resorte-amortiguador\cite{apuntes:2014}.
+		\item Transformaciones homogéneas\cite{robotica:2005}.
+		\item Ecuación de movimiento de un sistema pendulo doble\cite{apuntes:2014}.
+		\item Controlador PID\cite{control:2010}.
+		\item Control óptimo\cite{control:2010}.
+	\end{enumerate}
+
+%-------------------------------------------------------------------------------
+%	OBJETIVOS
+%-------------------------------------------------------------------------------
+
+\section{Objetivos}
+
+	El objetivo general de las prácticas es familiarizar al alumno con las librerías de computo cientifico necesarias para la simulación de sistemas mecánicos como los robots manipuladores, utilizando una opción de código libre y acceso libre (sin costo y sin restricciones comerciales), que a la vez es ampliamente utilizada en academia y en industria.
+
+	Los objetivos por práctica son:
+
+	\begin{enumerate}
+		\item El alumno implementará código computacional para obtener la raices de un polinomio de grado $n$.
+		\item El alumno implementará código computacional para simular el comportamiento de un sistema como función de transferencia.
+		\item El alumno implementará código para graficar y animar el comportamiento de un sistema mecánico.
+		\item El alumno implementará código para calcular posiciones de cuerpos rigidos despues de aplicarseles transformaciones homogéneas.
+		\item El alumno implementará código para modelar el comportamiento de un robot manipulador.
+		\item El alumno implementará código para simular un robot manipulador bajo una ley de control.
+		\item El alumno implementará código para calcular parametros de un controlador óptimo.
+	\end{enumerate}
+
+%-------------------------------------------------------------------------------
+%	TIEMPO
+%-------------------------------------------------------------------------------
+
+\section{Tiempo de realización}
+
+	El tiempo de realización de cada práctica es de $2$ sesiones de $2$ horas cada una, sin embargo tomando en cuenta el rapido avance de algunos alumnos, se incluye una práctica extra con contenido extra al del temario.
+
+	Tomando en cuenta una sesion de $2$ horas a la semana de prácticas en laboratorio, los alumnos deben ser capaces de terminar las prácticas de laboratorio en la semana 13 y entregar en la semana 14 de clases.
+
+%-------------------------------------------------------------------------------
+%	MARCO TEORICO
+%-------------------------------------------------------------------------------
+
+\section{Marco teórico}
+
+	En la actualidad existen una cantidad importante de cursos en linea\cite{google:Robotics} y presenciales que utilizan la programación como medio de reforzamiento a la teoría matemática de los robots manipuladores, sin embargo la gran mayoría existe en otro idioma (principalmente ingles) y el lenguaje de programación predominante es MATLAB y Simulink\cite{MATLAB:2015}, por lo que existe una buena motivación para crear prácticas ad-hoc para este curso.
+
+	Cabe notar que el nivel de conocimientos previos de la mayoria de los cursos que se encuentran en linea es mas elevado del que se establece para esta materia, por lo que tambien es importante que se consideren las limitaciones de los alumnos, especialmente porque esta materia es de cuarto cuatrimestre.
+
+	De la misma manera se ofrece una explicación en linea\cite{github:instalacion} para la instalación del software necesario para la implementación del código de las prácticas, en un intento de nivelar desigualdades de conocimientos informaticos necesarios para el computo cientifico-tecnológico.
+
+%-------------------------------------------------------------------------------
+%	RESULTADOS
+%-------------------------------------------------------------------------------
+
+\section{Resultados}
+
+	En ocasiones anteriores se han encontrado tanto errores en la programación inicial realizada por el profesor, tanto como ambiguedades en el lenguaje utilizado, lo que da pie a errores comúnes en la implementación por parte del alumno, por lo que es importante mantener una filosofía de mejora permanente en la implementación inicial realizada por el profesor, lo cual trae como ventajas añadidas el tomar en cuenta nuevos paradigmas de programación que pudieran resultar mas intuitivos para los alumnos, asi como implementaciones mas atrayentes para los alumnos.
+
+%-------------------------------------------------------------------------------
+%	BIBLIOGRAFÍA
+%-------------------------------------------------------------------------------
+
+{\bibliographystyle{plain}}
+
+\bibliography{bibliografia}
+
+%-------------------------------------------------------------------------------
+%	FIN DEL DOCUMENTO
+%-------------------------------------------------------------------------------
+
+\end{document}
