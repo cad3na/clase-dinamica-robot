@@ -24,7 +24,10 @@ def prueba_1_2(funcion):
     
     grados = linspace(0, 100, 10)
     
-    if [convertir(grado) for grado in grados] == [funcion(grado) for grado in grados]:
+    difs = [convertir(grado) - funcion(grado) for grado in grados]
+    max_dif = max(difs)
+    
+    if max_dif < 0.001:
         print("Muy buen trabajo!")
     else:
         info("Revisa tus calculos")
